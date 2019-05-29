@@ -2,7 +2,7 @@ def line(deli)
   if deli.length == 0
     puts 'The line is currently empty.'
   else
-    line = deli.map.each_with_index { |p| "#{i + 1}. #{p}" }.join(' ')
+    line = deli.map.each_with_index { |p, i| "#{i + 1}. #{p}" }.join(' ')
     puts "The line is currently: #{line}"
   end
 end
